@@ -1,46 +1,17 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils"
 
-interface BtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children?: React.ReactNode;
-}
+type ButtonPropType = { children: React.ReactNode, className?: string, onClick?: () => void }
 
-export default function Btn({
-    className,
-    children = "Continue",
-    ...props
-}: BtnProps) {
+export default function Btn({ children, className, onClick }: ButtonPropType) {
     return (
-        <Button
+        <button
             className={cn(
-                "relative h-11 px-6",
-                "bg-zinc-900 dark:bg-zinc-50",
-                "text-zinc-50 dark:text-zinc-900",
-                "hover:bg-zinc-800 dark:hover:bg-zinc-100",
-                "rounded-xl",
-                "transition-all duration-300",
-                "overflow-hidden",
-                "group",
+                "px-4 py-2 rounded-md font-semibold text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50",
                 className
             )}
-            {...props}
+            onClick={onClick}
         >
-            <div
-                className={cn(
-                    "flex items-center gap-2",
-                    "transition-all duration-300"
-                )}
-            >
-                <span>{children}</span>
-                <ArrowRight
-                    className={cn(
-                        "w-4 h-4",
-                        "transition-transform duration-300",
-                        "group-hover:translate-x-1"
-                    )}
-                />
-            </div>
-        </Button>
-    );
-}
+            {children}
+        </button>
+    )
+}   
