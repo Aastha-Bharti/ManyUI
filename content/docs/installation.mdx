@@ -1,0 +1,88 @@
+---
+title: Installation Nextjs
+description: How to install dependencies and structure your app with Next.js.
+---
+
+Install and configure Next.js to work with Many UI components.
+
+## Next.js
+
+### Create project
+
+Start by creating a new Next.js project using `create-next-app`:
+
+```bash
+npx create-next-app@latest my-app
+```
+
+### Run the CLI
+
+Run the `shadcn` CLI to setup your project:
+
+```bash
+npx shadcn@latest init
+```
+
+### Configure components.json
+
+You will be asked a few questions to configure `components.json`:
+
+```text
+Which style would you like to use? › New York
+Which color would you like to use as base color? › Neutral
+Do you want to use CSS variables for colors? › yes
+```
+
+### App structure
+
+Here's how I structure my Next.js apps. You can use this as a reference:
+
+```text {10-13,15-17,20}
+.
+├── app
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── ui
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── ...
+│   ├── auth
+│   │   ├── login-form.tsx
+│   │   └── signin-form.tsx
+│   └── ...
+├── lib
+│   └── utils.ts
+├── hooks
+│   └── use-mobile.tsx
+├── public
+└── styles
+    └── globals.css
+```
+
+- I place the UI components in the `components/ui` folder.
+- The rest of the components such as `<LoginForm />`, `<NavBar />` are placed in the `components` folder.
+- The `lib` folder contains all the utility functions.
+- The `hooks` folder contains all the custom hooks.
+
+### That's it
+
+You can now start adding components to your project.
+
+```bash
+npx shadcn@latest add button
+```
+
+The command above will add the `Button` component to your project. You can then import it like this:
+
+```tsx {1,6} showLineNumbers
+import { Button } from "@/components/ui/button"
+
+export default function Home() {
+  return (
+    <div>
+      <Button>Click me</Button>
+    </div>
+  )
+}
+```

@@ -1,21 +1,12 @@
 "use client";
-import {
-  Navbar,
-  NavBody,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+
 import { IconBrandGithub } from "@tabler/icons-react";
 import { useState } from "react";
 import ThemeToggle from "../themeToggle";
 import Link from "next/link";
+import { SearchDialogInput } from 'fumadocs-ui/components/dialog/search';
 
 export function Nav() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav className="fixed dark:text-neutral-50 text-neutral-800  w-full  z-50 bg-transparent ">
@@ -24,7 +15,7 @@ export function Nav() {
         <div className="p-2 text-textcolor font-bold text-2xl">Many ui</div>
         <div className="p-2 flex items-center gap-x-6">
           <Link href={"https://www.github.com/aastha-bharti"}><IconBrandGithub className="size-5"></IconBrandGithub></Link>
-         <ThemeToggle className="" ></ThemeToggle>
+          <ThemeToggle className="" ></ThemeToggle>
         </div>
       </div>
     </nav>

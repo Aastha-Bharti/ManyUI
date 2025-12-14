@@ -33,8 +33,9 @@ export default function RootLayout({
       >
         <RootProvider>
           <ViewTransitions>
+
             {children}
-            </ViewTransitions>
+          </ViewTransitions>
         </RootProvider>
       </body>
     </html>

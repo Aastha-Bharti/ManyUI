@@ -14,4 +14,4 @@ export default function Btn({ children, className, onClick }: ButtonPropType) {
             {children}
         </button>
     )
-}   
+}
