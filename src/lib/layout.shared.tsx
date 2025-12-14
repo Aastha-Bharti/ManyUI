@@ -4,5 +4,10 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       title: 'My App',
     },
+    links: [],
+    // disable the sidebar banner (title) since we have it in navbar
+    sidebar: {
+      banner: false,
+    },
   };
-}
+}                                                   

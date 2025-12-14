@@ -19,9 +19,9 @@ async function main() {
           path: filePath,
           content,
           type: typeof file === "string" ? component.type : file.type,
-          target: typeof file === "string" 
-            ? `/components/ui/${fileName}` 
-            : (file.target || `/components/ui/${fileName}`),
+          target: typeof file === "string"
+            ? `components/ui/${fileName}`
+            : (file.target || `components/ui/${fileName}`),
         };
       })
     );
