@@ -6,7 +6,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <div className="relative w-full">
       <Nav />
       <main>{children}</main>
-      {/* <Footer /> */}
+      
     </div>
   );
 };

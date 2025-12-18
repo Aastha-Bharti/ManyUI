@@ -1,0 +1,12 @@
+{
+  "name": "card-01",
+  "type": "registry:component",
+  "files": [
+    {
+      "path": "components/ui/card/card-01.tsx",
+      "content": "",
+      "type": "registry:component",
+      "target": "components/ui/card-01.tsx"
+    }
+  ]
+}

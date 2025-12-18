@@ -1,5 +1,7 @@
 // @ts-nocheck
-import * as __fd_glob_3 from "../content/docs/components/aastha.mdx?collection=docs"
+import * as __fd_glob_5 from "../content/docs/components/button.mdx?collection=docs"
+import * as __fd_glob_4 from "../content/docs/components/background.mdx?collection=docs"
+import * as __fd_glob_3 from "../content/docs/components/ai-input.mdx?collection=docs"
 import * as __fd_glob_2 from "../content/docs/installation.mdx?collection=docs"
 import * as __fd_glob_1 from "../content/docs/index.mdx?collection=docs"
 import { default as __fd_glob_0 } from "../content/docs/meta.json?collection=docs"
@@ -11,4 +13,4 @@ const create = server<typeof Config, import("fumadocs-mdx/runtime/types").Intern
   }
 }>({"doc":{"passthroughs":["extractedReferences"]}});
 
-export const docs = await create.docs("docs", "content\docs", {"meta.json": __fd_glob_0, }, {"index.mdx": __fd_glob_1, "installation.mdx": __fd_glob_2, "components/aastha.mdx": __fd_glob_3, });
+export const docs = await create.docs("docs", "content\docs", {"meta.json": __fd_glob_0, }, {"index.mdx": __fd_glob_1, "installation.mdx": __fd_glob_2, "components/ai-input.mdx": __fd_glob_3, "components/background.mdx": __fd_glob_4, "components/button.mdx": __fd_glob_5, });

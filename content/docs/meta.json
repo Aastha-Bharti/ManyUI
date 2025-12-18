@@ -10,6 +10,9 @@
     "installation",
     
     "---Components---",
-    "components/aastha"
+    "components/ai-input",
+    "components/button",
+    "components/background",
+    "components/card"
   ]
 }

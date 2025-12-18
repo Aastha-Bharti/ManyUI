@@ -1,0 +1,12 @@
+{
+  "name": "button-01",
+  "type": "registry:component",
+  "files": [
+    {
+      "path": "components/ui/button/button-01.tsx",
+      "content": "\r\nimport { cn } from \"@/lib/utils\"\r\n\r\ntype ButtonPropType = { children: React.ReactNode, className?: string, onClick?: () => void }\r\n\r\nexport default function Btn({className, onClick }: ButtonPropType) {\r\n    return (\r\n        <button\r\n            className={cn(\"px-4 py-2 rounded-xl border border-neutral-800 text-gray-800  dark:text-white cursor-pointer relative\",className )}\r\n            onClick={onClick}>\r\n            <div className=\"absolute -bottom-px inset-x-0 w-full h-px bg-linear-to-r from-transparent via-sky-500 to-transparent \"></div>\r\n            Join the waitlist{\" \"}\r\n        </button>\r\n    )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/ui/button-01.tsx"
+    }
+  ]
+}

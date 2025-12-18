@@ -1,0 +1,12 @@
+{
+  "name": "PrimaryButton",
+  "type": "registry:component",
+  "files": [
+    {
+      "path": "components/ui/button/PrimaryButton.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\r\n\r\ntype ButtonPropType = { children: React.ReactNode, className?: string, onClick?: () => void }\r\n\r\nexport default function Btn({ children, className, onClick }: ButtonPropType) {\r\n    return (\r\n        <button\r\n            className={cn(\r\n                \"bg-[#3b7ce5] hover:bg-[#1669C1] px-4 py-2 rounded-lg text-sm text-white font-semibold font-primary text-center shadow-lg text-shadow-md tracking-tight cursor-pointer transition-all duration-200 relative\",\r\n                className\r\n            )}\r\n            onClick={onClick}\r\n        >\r\n            Simple button\r\n        </button>\r\n    )\r\n}",
+      "type": "registry:component",
+      "target": "components/ui/PrimaryButton.tsx"
+    }
+  ]
+}

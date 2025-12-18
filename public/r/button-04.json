@@ -1,0 +1,12 @@
+{
+  "name": "button-04",
+  "type": "registry:component",
+  "files": [
+    {
+      "path": "components/ui/button/button-04.tsx",
+      "content": "\r\nimport { cn } from \"@/lib/utils\"\r\n\r\ntype ButtonPropType = { children: React.ReactNode, className?: string, onClick?: () => void }\r\n\r\nexport default function Btn({className, onClick }: ButtonPropType) {\r\n    return (\r\n        <button\r\n            className={cn(\"text-xs px-7 py-3 font-mono mt-3 mb-1 shadow-[0px_3px_3px_0px_rgba(0,0,0,0.15)] rounded-md cursor-pointer\",className )}\r\n            onClick={onClick}>\r\n            Button\r\n        </button>\r\n    )\r\n}",
+      "type": "registry:component",
+      "target": "components/ui/button-04.tsx"
+    }
+  ]
+}

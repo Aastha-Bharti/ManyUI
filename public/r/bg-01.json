@@ -1,0 +1,12 @@
+{
+  "name": "bg-01",
+  "type": "registry:component",
+  "files": [
+    {
+      "path": "components/ui/background/bg-01.tsx",
+      "content": "\r\n\r\nconst App = () => {\r\n  return (\r\n    <div className='h-screen relative bg-blue-100 w-full  [background:radial-gradient(125%_100%_at_50%_0%,#FFF_6.32%,#E0F0FF_29.28%,#E7EFFD_68.68%,#FFF_100%)] '>\r\n      <div className='max-w-5xl mx-auto absolute inset-0 h-full w-full z-0'>\r\n        <div className='absolute inset-y-0 left-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none z-0'></div>\r\n        <div className='absolute inset-y-0 right-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none z-0'></div>\r\n\r\n      </div>\r\n    </div>\r\n  ) \r\n}\r\n\r\nexport default App",
+      "type": "registry:component",
+      "target": "components/ui/bg-01.tsx"
+    }
+  ]
+}
