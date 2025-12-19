@@ -5,11 +5,11 @@
   "root": true,
   "defaultOpen": true,
   "pages": [
-    "---Getting Started---",
+    "---GETTING STARTED---",
     "index",
     "installation",
     
-    "---Components---",
+    "---COMPONENTS---",
     "components/ai-input",
     "components/button",
     "components/background",

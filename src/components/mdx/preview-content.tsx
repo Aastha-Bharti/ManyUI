@@ -9,7 +9,7 @@ import {
     type RefObject,
 } from "react";
 import { Button } from "@/components/ui/buttonShad";
-import { Copy, Check, CheckCheck, Terminal, Code, AppWindow, Code2 } from "lucide-react";
+import { CheckCheck, Terminal, AppWindow, Code2 } from "lucide-react";
 import { copyComponent } from "@/lib/action";
 import { cn } from "@/lib/utils";
 import { OpenInV0Button } from "@/components/ui/openInV0Button";
@@ -19,7 +19,7 @@ import { toast } from "sonner";
 export default function PreviewContent({
     link,
     prePath,
-    isBlock = false,
+    
     activeTab,
     setActiveTab,
 }: {
@@ -173,7 +173,7 @@ export default function PreviewContent({
                                         bounce: 0,
                                         duration: 0.6,
                                     }}
-                                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-zinc-950 dark:bg-zinc-50 z-20"
+                                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-zinc-950 dark:bg-zinc-50 z-20"
                                 />
                             )}
                         </Button>
@@ -198,7 +198,7 @@ export default function PreviewContent({
                                         bounce: 0,
                                         duration: 0.6,
                                     }}
-                                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-zinc-950 dark:bg-zinc-50 z-20"
+                                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-zinc-950 dark:bg-zinc-50 z-20"
                                 />
                             )}
                         </Button>

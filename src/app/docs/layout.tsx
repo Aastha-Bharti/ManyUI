@@ -1,30 +1,15 @@
-
-// import { DocsLayout } from 'fumadocs-ui/layouts/notebook';
-// import { baseOptions } from '@/lib/layout.shared';
-// import { source } from '@/lib/source';
-// import type { ReactNode } from 'react';
-
-// export default function Layout({ children }: { children: ReactNode }) {
-
-//     const { nav} = baseOptions;
-
-//   return (
-//       <DocsLayout  tree={source.pageTree} 
-//         {...baseOptions}
-//         tabMode="navbar"
-
-//       >
-//       {children}
-//     </DocsLayout>
-
-//   );
-// }
-
 import { source } from "@/lib/source";
 import { DocsLayout } from "fumadocs-ui/layouts/notebook";
 import type { ReactNode } from "react";
-import { baseOptions } from "@/lib/layout.shared";
+import { baseOptions } from "../layout.config";
 import type { Metadata } from "next";
+import { Ubuntu } from "next/font/google";
+
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-ubuntu",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -38,16 +23,18 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
+    <>
     <DocsLayout
+      themeSwitch={ {
+        enabled : false
+      }}
       tree={source.pageTree}
       {...baseOptions}
       sidebar={{
-        defaultOpenLevel: 1,
-
-      }}
-    >
+        defaultOpenLevel: 1,}}>
       {children}
       
     </DocsLayout>
+    </>
   );
 }

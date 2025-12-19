@@ -41,7 +41,7 @@ const ITEMS = [
     },
 ];
 
-export default function AIInput_03() {
+export default function AIInput_03({className} : {className : string}) {
     const [inputValue, setInputValue] = useState("");
     const [selectedItem, setSelectedItem] = useState<string | null>(
         "Make shorter"

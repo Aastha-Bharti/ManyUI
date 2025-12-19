@@ -3,6 +3,8 @@
 import { Moon, Sun } from 'lucide-react'
 import { useModeAnimation } from 'react-theme-switch-animation'
 import { useEffect, useState } from 'react'
+import { motion } from 'motion/react'
+
 
 const ThemeToggle = ({ className }: { className?: string }) => {
   const [mounted, setMounted] = useState(false)
@@ -18,18 +20,22 @@ const ThemeToggle = ({ className }: { className?: string }) => {
   if (!mounted) return null
 
   return (
-    <button
+    <motion.button
       ref={ref}
-      onClick={toggleSwitchTheme}
+      onClick={() => {
+        console.log("ThemeToggle: Button clicked");
+        toggleSwitchTheme();
+      }}
       className={className}
       aria-label="Toggle theme"
+      style={{ zIndex: 9999, position: 'relative' }} // Force z-index for debugging
     >
       {isDarkMode ? (
         <Sun className="size-5" />
       ) : (
         <Moon className="size-5" />
       )}
-    </button>
+    </motion.button>
   )
 }
 

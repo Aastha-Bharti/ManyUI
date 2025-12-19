@@ -1,5 +1,7 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import { Flame } from "lucide-react";
+import { NavCustom } from "@/components/landing/navCustom";
+import ThemeToggle from "@/components/layout/theme-toggle";
 
 
 
@@ -16,8 +18,12 @@ export const baseOptions: BaseLayoutProps = {
   },
   links: [
     {
-      text: "Pricing",
-      url: "/pricing",
+      type: "custom",
+      children: <NavCustom />,
     },
+    {
+      type: "custom",
+      children: <ThemeToggle />,
+    }
   ],
 };

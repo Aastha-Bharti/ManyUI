@@ -21,7 +21,7 @@ import { cn } from '../../../lib/cn';
 import { buttonVariants } from '../../ui/button';
 import { Languages, Sidebar as SidebarIcon, X } from 'lucide-react';
 import { LanguageToggle } from '../language-toggle';
-import { ThemeToggle } from '../theme-toggle';
+import ThemeToggle  from '../theme-toggle';
 import type * as PageTree from 'fumadocs-core/page-tree';
 import {
   LayoutBody,
@@ -273,7 +273,7 @@ export function DocsLayout(props: DocsLayoutProps) {
             )}
             {themeSwitch.enabled !== false &&
               (themeSwitch.component ?? (
-                <ThemeToggle mode={themeSwitch.mode ?? 'light-dark-system'} />
+                <ThemeToggle  />
               ))}
           </Footer>
         </SidebarDrawer>
@@ -431,7 +431,7 @@ function DocsNavbar({
             )}
             {themeSwitch.enabled !== false &&
               (themeSwitch.component ?? (
-                <ThemeToggle mode={themeSwitch.mode ?? 'light-dark-system'} />
+                <ThemeToggle />
               ))}
             {sidebarCollapsible && navMode === 'top' && (
               <SidebarCollapseTrigger
