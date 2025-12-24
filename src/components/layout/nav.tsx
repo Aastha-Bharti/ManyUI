@@ -25,7 +25,7 @@ export function Nav() {
         {/* Desktop Navigation */}
         <NavBody>
           {/* Left */}
-          <div className="font-bold text-2xl font-ubuntu text-neutral-400">Many UI</div>
+          <div className="font-bold text-2xl font-ubuntu text-neutral-900 dark:text-neutral-400">Many UI</div>
 
          
 

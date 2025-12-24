@@ -48,7 +48,7 @@ const BentoCard = ({
     className={cn(
       "group relative flex flex-col justify-between overflow-hidden rounded-xl",
       // common base styles
-      "bg-white/5 dark:bg-black/5 backdrop-blur-xl border border-neutral-800/60",
+      "bg-white/5 dark:bg-black/5 backdrop-blur-xl border dark:border-neutral-800/60 border-neutral-200",
       // box-shadow - using shadow-sm for subtle depth, or a custom one if preferred
       "transition-all duration-300",
       // dark mode adjustments if needed, though bg-card usually handles it

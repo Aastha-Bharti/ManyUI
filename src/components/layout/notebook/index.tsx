@@ -326,7 +326,7 @@ function DocsNavbar({
     >
       <div
         data-header-body=""
-        className="flex border-b px-4 gap-2 h-14 md:px-6"
+        className="relative z-50 flex border-b px-4 gap-2 h-14 md:px-6"
       >
         <div
           className={cn(

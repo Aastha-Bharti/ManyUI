@@ -9,7 +9,7 @@ export function NavCustom() {
   
 
   return (
-    <div className="flex items-center justify-end gap-1 flex-1">
+    <div className=" flex items-center justify-end gap-1 flex-1">
       <div className="flex items-center justify-start md:justify-end gap-1 flex-1">
         
         <Link href={"https://www.github.com/aastha-bharti"}><IconBrandGithub className="size-5"></IconBrandGithub></Link>
