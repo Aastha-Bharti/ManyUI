@@ -25,7 +25,9 @@ export function Nav() {
         {/* Desktop Navigation */}
         <NavBody>
           {/* Left */}
-          <div className="font-bold text-2xl font-ubuntu text-neutral-900 dark:text-neutral-400">Many UI</div>
+          <div className="font-bold text-2xl font-ubuntu text-neutral-900 dark:text-neutral-200 flex items-center gap-2">
+            <img src="/logo.png" alt="ManyUI" width={20} height={20} className="dark:invert"/>
+            Many UI</div>
 
          
 
@@ -54,7 +56,7 @@ export function Nav() {
           >
             <div className="flex w-full flex-col gap-4">
               <Link
-                href="https://www.github.com/aastha-bharti"
+                href="https://github.com/Aastha-Bharti/ManyUI.git"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300"
               >

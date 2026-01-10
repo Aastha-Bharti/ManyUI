@@ -56,7 +56,7 @@ const Hero = () => {
 
         <motion.div variants={itemVariants} className="flex gap-x-5 z-10">
           <Link
-            href="/docs"
+            href="/docs/components/ai-input"
             className="group inline-flex items-center gap-2 px-4 rounded-lg bg-linear-to-r from-zinc-900 to-zinc-800 dark:from-zinc-300 dark:to-zinc-700 text-white dark:text-zinc-900 hover:shadow-lg hover:shadow-zinc-900/20 dark:hover:shadow-zinc-100/20 transition-all duration-200 ease-in-out">
             <Zap className="w-4 h-4 group-hover:rotate-12 transition-transform" />
             <span className="font-bold text-white dark:text-zinc-900  text-sm">Explore Components</span>
@@ -64,8 +64,8 @@ const Hero = () => {
           </Link>
 
           <Link
-            href="#"
-            target="_blank"
+            href="/docs"
+            
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg
                             border border-zinc-200 dark:border-zinc-800
                             hover:bg-zinc-100 dark:hover:bg-zinc-800/50
