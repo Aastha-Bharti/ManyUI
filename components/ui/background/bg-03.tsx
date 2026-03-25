@@ -80,7 +80,7 @@ export default function BeamsBackground({
 
         function resetBeam(beam: Beam, index: number, totalBeams: number) {
             if (!canvas) return beam;
-            
+
             const column = index % 3;
             const spacing = canvas.width / 3;
 
