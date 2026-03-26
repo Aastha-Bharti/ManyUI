@@ -49,8 +49,8 @@
 }
 
 :root {
-  --herocolor:var(--color-neutral-100);
-  --textcolor:var(--color-neutral-900);
+  --herocolor: var(--color-neutral-100);
+  --textcolor: var(--color-neutral-900);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -86,8 +86,8 @@
 }
 
 .dark {
-  --herocolor:var(--color-neutral-900);
-  --textcolor:var(--color-neutral-100);
+  --herocolor: var(--color-neutral-900);
+  --textcolor: var(--color-neutral-100);
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -121,10 +121,32 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Refined Active Sidebar Item Styling - Targeting navigation sidebars only */
+#nd-sidebar [data-active="true"],
+#nd-sidebar-mobile [data-active="true"],
+[data-sidebar="menu-button"][data-active="true"],
+aside:not(.fd-toc) [data-active="true"] {
+  background: linear-gradient(to left, #232326 20%, rgb(21, 21, 23) 100%) !important;
+  color: #fafafa !important;
+  border: 0.5px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 9px !important;
+  font-weight: 500;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Subtle hover state for active navigation items */
+#nd-sidebar [data-active="true"]:hover,
+#nd-sidebar-mobile [data-active="true"]:hover,
+[data-sidebar="menu-button"][data-active="true"]:hover,
+aside:not(.fd-toc) [data-active="true"]:hover {
+  background: linear-gradient(to left, #242427 20%, #18181b 100%) !important;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

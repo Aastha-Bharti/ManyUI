@@ -20,21 +20,7 @@ export const components: Registry = [
     type: "registry:component",
     files: [{ path: "components/ui/ai-input/ai-input-04.tsx", type: "registry:component" }],
   },
-  {
-    name: "bg-01",
-    type: "registry:component",
-    files: [{ path: "components/ui/background/bg-01.tsx", type: "registry:component" }],
-  },
-  {
-    name: "bg-02",
-    type: "registry:component",
-    files: [{ path: "components/ui/background/bg-02.tsx", type: "registry:component" }],
-  },
-  {
-    name: "bg-03",
-    type: "registry:component",
-    files: [{ path: "components/ui/background/bg-03.tsx", type: "registry:component" }],
-  },
+  
   {
     name: "PrimaryButton",
     type: "registry:component",
@@ -74,5 +60,10 @@ export const components: Registry = [
     name: "card-01",
     type: "registry:component",
     files: [{ path: "components/ui/card/card-01.tsx", type: "registry:component" }],
+  },
+  {
+    name: "form-01",
+    type: "registry:component",
+    files: [{ path: "components/ui/forms/form-01.tsx", type: "registry:component" }],
   },
 ];

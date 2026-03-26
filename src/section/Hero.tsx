@@ -2,7 +2,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, DockIcon, Zap } from "lucide-react";
+import { ArrowRight, Component, DockIcon, Zap } from "lucide-react";
 
 const Hero = () => {
   const containerVariants = {
@@ -25,7 +25,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full h-screen bg-white dark:bg-linear-to-b dark:from-zinc-950 dark:to-zinc-900">
+    <section className="w-full h-screen bg-white dark:bg-linear-to-b dark:from-black  dark:to-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden px-8 pt-60 pb-30 text-center">
 
@@ -59,8 +59,9 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="flex gap-x-5 z-10">
               <Link
                 href="/docs/components/ai-input"
-                className="group inline-flex items-center gap-2 px-4 rounded-lg bg-linear-to-r from-zinc-900 to-zinc-500 dark:from-zinc-300 dark:to-zinc-700 text-white dark:text-zinc-900 hover:shadow-lg hover:shadow-zinc-900/20 dark:hover:shadow-zinc-950/20 transition-all duration-200 ease-in-out">
-                <Zap className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                className="group inline-flex items-center gap-2 px-4 rounded-lg bg-linear-to-r from-zinc-700 to-zinc-300 dark:from-zinc-300 dark:to-zinc-700 text-white dark:text-zinc-900 hover:shadow-lg hover:shadow-zinc-900/20 dark:hover:shadow-zinc-950/20 transition-all duration-200 ease-in-out">
+                
+                <Component className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                 <span className="font-medium text-white dark:text-zinc-900  text-sm">Explore Components</span>
 
               </Link>

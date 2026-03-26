@@ -1,15 +1,8 @@
 import { source } from "@/lib/source";
-import { DocsLayout } from "fumadocs-ui/layouts/notebook";
+import DocsLayoutClient from "@/components/layout/docs-layout-client";
 import type { ReactNode } from "react";
 import { baseOptions } from "../layout.config";
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
-
-const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-ubuntu",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -19,22 +12,14 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <>
-    <DocsLayout
-      themeSwitch={ {
-        enabled : false
-      }}
+    <DocsLayoutClient
       tree={source.pageTree}
-      {...baseOptions}
-      sidebar={{
-        defaultOpenLevel: 1,}}>
+      navTitle={baseOptions.nav?.title}
+      links={baseOptions.links}
+    >
       {children}
-      
-    </DocsLayout>
-    </>
+    </DocsLayoutClient>
   );
 }

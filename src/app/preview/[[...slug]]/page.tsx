@@ -7,11 +7,7 @@ const CENTERED_COMPONENTS = [
     "ai-input",
     "background",
     "button",
-    "card",
-    "carousel",
-    "checkbox",
-    "loader",
-    "profile-card"
+    "forms",
     // Add more small components here
 ];
 

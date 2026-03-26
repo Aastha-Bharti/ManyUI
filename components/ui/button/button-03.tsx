@@ -19,3 +19,6 @@ export default function Btn({ className, onClick, children }: ButtonPropType) {
     </button>
   );
 }
+
+
+

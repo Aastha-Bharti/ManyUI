@@ -8,11 +8,10 @@
     "---GETTING STARTED---",
     "index",
     "installation",
-    
     "---COMPONENTS---",
     "components/ai-input",
     "components/button",
-    "components/background",
+    "components/forms",
     "components/card"
   ]
 }
